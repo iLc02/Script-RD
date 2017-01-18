@@ -33,7 +33,7 @@ echo "Generated Link : $PublicLink"
 
 
 # From here you can do whatever you want with that public link, I'm sending it to my Synology Download Station
-wget --quiet --load-cookies=./Cookies/cookies_Syno.txt --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"  "http://$IPSynology:5000/webapi/DownloadStation/task.cgi?api=SYNO.DownloadStation.Task&version=1&method=create&uri=$PublicLink"
+wget --quiet --load-cookies=./Cookies/cookies_Syno.txt --user-agent="Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"  "http://$Syno_IP:5000/webapi/DownloadStation/task.cgi?api=SYNO.DownloadStation.Task&version=1&method=create&uri=$PublicLink"
 
 # Removing the first line of the file
 sed '1d' ./Files/RDTorrentsListLinks > ./Files/RDTorrentsListLinks2

@@ -8,6 +8,7 @@ mkdir Cookies 2> /dev/null
 
 # Se logguer sur le Syno
 
-wget --save-cookies ./Cookies/cookies_Syno.txt --keep-session-cookies "http://$IPSynology:5000/webapi/auth.cgi?api=SYNO.API.Auth&version=2&method=login&account=$Syno_User&passwd=$Syno_Pass&session=DownloadStation&format=cookie"
+wget --save-cookies ./Cookies/cookies_Syno.txt --keep-session-cookies \
+  "http://$Syno_IP:5000/webapi/auth.cgi?api=SYNO.API.Auth&version=2&method=login&account=$Syno_User&passwd=$Syno_Pass&session=DownloadStation&format=cookie"
 
 rm auth.*

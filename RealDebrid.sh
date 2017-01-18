@@ -1,6 +1,6 @@
 #!/bin/bash
 
-######## variables list (default) : $TorrentsFolder $RDtoken $RDMaxTorrents (20) $MaximumSpots (20) $IPSynology $Syno_User $Syno_Pass
+######## variables list (default) : $TorrentsFolder $RDtoken $RDMaxTorrents (20) $MaximumSpots (20) $Syno_IP $Syno_User $Syno_Pass
 
 
 # To run this script, you need JQ, curl, wget installed
