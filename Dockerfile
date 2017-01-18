@@ -3,7 +3,7 @@ FROM ubuntu
 MAINTAINER pmarx <pierreleroy476@gmail.com>
 
 ## Updating & installing
-RUN apt-get update && apt-get -y install curl wget jq rename nano cron
+RUN apt-get update && apt-get -y install curl wget jq rename nano cron rsyslog
 
 #Copying files
 ADD Functions/ /script/Functions/
